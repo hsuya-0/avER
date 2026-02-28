@@ -6,11 +6,12 @@ import asyncio
 import time
 import math
 from keep_alive import keep_alive
+import os
 
 # ==========================================
 #               CONFIGURATION
 # ==========================================
-BOT_TOKEN = "MTQ3NjU0MDY4NDUyNDcxNjEzMw.G5uJul.YDU-vSqHc_hEPb7Oi8dv23YPT7Rcl8qU8lLG24"
+BOT_TOKEN = os.environ.get("BOT_TOKEN") 
 
 # Logic Configuration
 ROBUX_PER_INVITE = 20
@@ -437,4 +438,5 @@ async def validate_invites(interaction: discord.Interaction, user: discord.Membe
 
 if __name__ == "__main__":
     keep_alive()
+
     bot.run(BOT_TOKEN)
