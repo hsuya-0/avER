@@ -25,7 +25,7 @@ FALCON_BOT_ID = None
 TRACKER_HISTORY_LIMIT = 5000 
 
 # Visual Configuration
-EMBED_COLOR = 0x7251c1FD700
+EMBED_COLOR = 0x7251c1
 
 # ==========================================
 #             CUSTOM EMOJIS
@@ -440,3 +440,4 @@ if __name__ == "__main__":
     keep_alive()
 
     bot.run(BOT_TOKEN)
+
